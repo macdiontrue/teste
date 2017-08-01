@@ -1,0 +1,188 @@
+pwd- diz em que diorectorio estamos
+cd / entrarmos no dirctorio faz me voltar ao dirctorio home
+ls - lista fichiros
+
+clear ou control l
+man ls - manual de comando 
+ls -l mais detalhes
+
+mkdir para crirar directorio 
+touch - para criar ficheiro
+grub - gstor d boot
+apagar um directwcorio(mrdir)
+rmdir
+rmdir-r para apgar um dirctorio com fichiros(rm-r)
+rm- apagar um fichiro
+cp-copia ficheiro ou directorio
+
+history- comando qu prmit ver o que fara feito
+shift pagup  para navegar para cima
+
+head-imprime as  primeiras linhas
+head/ documntos bara historico
+tail- mostra as 10 ultimas  linhas 
+
+head -n 11 Documentos/historico
+
+aulas d hoje com a propria
+echo dionisio -imprime o que sta escrito
+echo dionisio >historico copia para um outro directorio
+// visualizar as linhas qu contem as palavras mkdir(grep mkdir docu/teste)
+contar as linhas que tm o mkdir
+wc
+{
+Concatenar history | grep mkdir"
+cat documentos/teste | grep mkdir
+comando visualizar colunas (awk 'print $nrcoluna')
+awk '{print $1}' Documentos/teste mostrou a primeira coluna
+awk '{print $1,$2} ' Documentos/teste | grep makdir
+}
+aulas d hoje com a propria
+awk '{print $1,$2} ' Documentos/teste | grep makdir >> historico
+la -mostra ficheiros ocultos
+editores de texto em linux
+nano vim vi vim tiny
+
+vim file
+
+scap -sair
+q-sair sem gravar wq!=x -sair e gravar
+:q! 
+w!-gravar
+! forca a saida
+dd-apaga a ;linha corrente
+yy-copiar a linha
+termina com p
+5yy cpoiar cinco liescrver -
+esq : 
+tpc- finde e replace ver mais sobr echo
+p-past ou color
+
+
+    
+comando fdisk correr como suprsuser
+fdisk manipulacao de tabelas de paricos
+fdisk  -lu ver os dicos
+fdisk /dev/sdb 
+m-help
+p-pimaria
+p-print
+tamanho +1G
+n-nova particao
+wite  w significa gravar
+d-apagar
+como identificar um disco 
+control alt t-para dsktop terminal
+control alt f1
+disklabltype -tabela de particao DOS=MBR
+init 0 sair d supr utilizador
+
+/dev/sdb
+
+
+ 
+append- >> redimiciona ou anexar o d=fichiro noutro nao apagando o original  history>>Documentos
+redirect-> redimiciona ou anexar o d=fichiro noutro apagando o original
+history>Documentos/historico trocamos uma informacao num outro directorio para historico 
+
+WC-L quantas linhas tm o ficheiro Historicou ou qualqur coiaa nem?? Disconectar
+wc -1 historico mostra o numero de linhas
+
+Control D para o usuario o loop infinito
+
+
+
+
+mount point
+ 
+directorios que podm estar noutri ficheiro
+boot hom lib usr opt var tmp
+
+como manipular Directorios
+cd-direciona nos ao dirctorio home
+
+mount-point linux
+
+
+criar varios Directorios ou ficheiros mkdir teste{1..2}
+for((i=1; i<=10; i++)) do mkdir pasta$;done
+
+atribuir ficheiro a cada dirctorio
+for((i=1; i<=10; i++)) do touch pasta$/doc$;done
+
+fdisk -lu ou -l mostra discos conectados a ele
+
+w-Save and exit     Q quit without saving
+
+como formatar e atribuir um sistema de ficheiros a um  disco
+mkfs-atrubui um file System
+mkfs+ tab lista todos os ficheiros
+
+formatar  e atrubuir o ficheiro
+mkfs.ext4 /dev/sdb1/montagem
+df mostra onde estao montadas as particoes
+df h mostra informacoes em linguagem humana
+
+sort + nome do ficheiro
+ordem decrescente sort -r | more
+echo 1 . ele nao duplica ainformacao
+sort -u . ignora comandos rpetidos
+sort b | uniq
+mount /dev/sdb1 /mnt/sdb1
+
+
+cp Documentos/aula.txt Documentos/aula.txt.bk
+
+tpc 
+como montar permanentemente numa particao
+fdisk -l
+
+relacao ntre NuID e Montagem permanete de dispositivos
+como Visualizar UUiD de Dispositivos
+qual e a relacao entre  UUID com a Identificacao de Particoes
+
+
+Montagem automatica
+
+/dev/hda1 /mnt/win vfat defaults 0 0
+
+Agora vamos entendê-lo. A sintaxe da linha é:
+
+
+[caminho da partição] [ponto de montagem] [tipo] [opções] [ordem]
+
+Desmontando partições
+umount /mnt/win
+unmount -a desmonta todos os dispositivos
+
+{
+sudde montagem”, o arquivo /etc/fstab precisará ser editado!
+
+}
+1.primeiro abrir o ponto de montagem
+
+sudo cat /etc/fcstab
+precisa dscobrir o UUID
+abrir no terminal
+nano /etc/fstab  sudo vim /etc/fstab
+
+descobrir um UUId 
+ sudo blkid
+depois por o ponto de montagem /montagem dump ext3 pass defauls 0 0
+/dev/sdb1 /mnt/disco1 ext4 defaults 0 0
+gravar esc:xmiguel
+
+
+mpermanebntemmfontar
+
+
+
+
+
+
+
+
+
+
+
+
